@@ -1,0 +1,136 @@
+!SpriteSheet
+Id: 4d79cfa5-3349-466e-8d91-88ef6ae0ebbd
+SerializedVersion: {Xenko: 1.5.0-alpha01}
+Tags: []
+Type: Sprite2D
+ColorKeyColor: {R: 255, G: 0, B: 255, A: 255}
+Packing: {}
+Sprites:
+    ef9f53217ba34ceed63e2fa75ee53094:
+        Source: ../../../../../../../Downloads/george.png
+        Name: down_1
+        TextureRegion: {X: 10, Y: 11, Width: 29, Height: 31}
+        PixelsPerUnit: 1.0
+        Center: {X: 0.0, Y: 0.0}
+        Borders: {X: 0.0, Y: 0.0, Z: 0.0, W: 0.0}
+        BorderColor: {R: 0, G: 0, B: 0, A: 0}
+    45baa2c81bf0c30d126d449ae4449563:
+        Source: ../../../../../../../Downloads/george.png
+        Name: down_2
+        TextureRegion: {X: 10, Y: 59, Width: 29, Height: 32}
+        PixelsPerUnit: 1.0
+        Center: {X: 0.0, Y: 0.0}
+        Borders: {X: 0.0, Y: 0.0, Z: 0.0, W: 0.0}
+        BorderColor: {R: 0, G: 0, B: 0, A: 0}
+    dadc047076919de4a7be281889885473:
+        Source: ../../../../../../../Downloads/george.png
+        Name: down_3
+        TextureRegion: {X: 10, Y: 107, Width: 29, Height: 31}
+        PixelsPerUnit: 1.0
+        Center: {X: 0.0, Y: 0.0}
+        Borders: {X: 0.0, Y: 0.0, Z: 0.0, W: 0.0}
+        BorderColor: {R: 0, G: 0, B: 0, A: 0}
+    b060ebd48ae27b584363597c217ea6c0:
+        Source: ../../../../../../../Downloads/george.png
+        Name: down_4
+        TextureRegion: {X: 10, Y: 155, Width: 29, Height: 32}
+        PixelsPerUnit: 1.0
+        Center: {X: 0.0, Y: 0.0}
+        Borders: {X: 0.0, Y: 0.0, Z: 0.0, W: 0.0}
+        BorderColor: {R: 0, G: 0, B: 0, A: 0}
+    fa1a57edcac18a12b23db2a57a510bfe:
+        Source: ../../../../../../../Downloads/george.png
+        Name: left_1
+        TextureRegion: {X: 56, Y: 11, Width: 28, Height: 32}
+        PixelsPerUnit: 1.0
+        Center: {X: 0.0, Y: 0.0}
+        Borders: {X: 0.0, Y: 0.0, Z: 0.0, W: 0.0}
+        BorderColor: {R: 0, G: 0, B: 0, A: 0}
+    d86bd701709a2019f86fade599202d23:
+        Source: ../../../../../../../Downloads/george.png
+        Name: left_2
+        TextureRegion: {X: 56, Y: 59, Width: 28, Height: 32}
+        PixelsPerUnit: 1.0
+        Center: {X: 0.0, Y: 0.0}
+        Borders: {X: 0.0, Y: 0.0, Z: 0.0, W: 0.0}
+        BorderColor: {R: 0, G: 0, B: 0, A: 0}
+    6104be11929244d9b3beb3b21e4092c0:
+        Source: ../../../../../../../Downloads/george.png
+        Name: left_3
+        TextureRegion: {X: 56, Y: 107, Width: 28, Height: 32}
+        PixelsPerUnit: 1.0
+        Center: {X: 0.0, Y: 0.0}
+        Borders: {X: 0.0, Y: 0.0, Z: 0.0, W: 0.0}
+        BorderColor: {R: 0, G: 0, B: 0, A: 0}
+    f88c26a1b80e860da6b7f45dc5b3b948:
+        Source: ../../HOH.Game/Resources/Player.png
+        Name: left_4
+        TextureRegion: {X: 56, Y: 155, Width: 28, Height: 32}
+        PixelsPerUnit: 1.0
+        Center: {X: 0.0, Y: 0.0}
+        Borders: {X: 0.0, Y: 0.0, Z: 0.0, W: 0.0}
+        BorderColor: {R: 0, G: 0, B: 0, A: 0}
+    9eb60083b00af82fd53fdcbae8f4abbd:
+        Source: ../../../../../../../Downloads/george.png
+        Name: up_1
+        TextureRegion: {X: 106, Y: 11, Width: 29, Height: 31}
+        PixelsPerUnit: 1.0
+        Center: {X: 0.0, Y: 0.0}
+        Borders: {X: 0.0, Y: 0.0, Z: 0.0, W: 0.0}
+        BorderColor: {R: 0, G: 0, B: 0, A: 0}
+    53a4038defcbf100ada178db6d21fad3:
+        Source: ../../../../../../../Downloads/george.png
+        Name: up_2
+        TextureRegion: {X: 106, Y: 59, Width: 29, Height: 32}
+        PixelsPerUnit: 1.0
+        Center: {X: 0.0, Y: 0.0}
+        Borders: {X: 0.0, Y: 0.0, Z: 0.0, W: 0.0}
+        BorderColor: {R: 0, G: 0, B: 0, A: 0}
+    ee74237fc1d70bd694d4f1a3deb43939:
+        Source: ../../../../../../../Downloads/george.png
+        Name: up_3
+        TextureRegion: {X: 106, Y: 107, Width: 29, Height: 31}
+        PixelsPerUnit: 1.0
+        Center: {X: 0.0, Y: 0.0}
+        Borders: {X: 0.0, Y: 0.0, Z: 0.0, W: 0.0}
+        BorderColor: {R: 0, G: 0, B: 0, A: 0}
+    7ad5ca99908cb848940333ced4fd521a:
+        Source: ../../../../../../../Downloads/george.png
+        Name: up_4
+        TextureRegion: {X: 106, Y: 155, Width: 29, Height: 32}
+        PixelsPerUnit: 1.0
+        Center: {X: 0.0, Y: 0.0}
+        Borders: {X: 0.0, Y: 0.0, Z: 0.0, W: 0.0}
+        BorderColor: {R: 0, G: 0, B: 0, A: 0}
+    ae85ff4eca82f316d26376243400bd85:
+        Source: ../../../../../../../Downloads/george.png
+        Name: right_1
+        TextureRegion: {X: 155, Y: 11, Width: 28, Height: 32}
+        PixelsPerUnit: 1.0
+        Center: {X: 0.0, Y: 0.0}
+        Borders: {X: 0.0, Y: 0.0, Z: 0.0, W: 0.0}
+        BorderColor: {R: 0, G: 0, B: 0, A: 0}
+    9a3899bffa2ecf342c21a2a3ded08078:
+        Source: ../../../../../../../Downloads/george.png
+        Name: right_2
+        TextureRegion: {X: 155, Y: 59, Width: 28, Height: 32}
+        PixelsPerUnit: 1.0
+        Center: {X: 0.0, Y: 0.0}
+        Borders: {X: 0.0, Y: 0.0, Z: 0.0, W: 0.0}
+        BorderColor: {R: 0, G: 0, B: 0, A: 0}
+    6ebb4f7d4098513c7805b6fe17a0e01e:
+        Source: ../../../../../../../Downloads/george.png
+        Name: right_3
+        TextureRegion: {X: 155, Y: 107, Width: 28, Height: 32}
+        PixelsPerUnit: 1.0
+        Center: {X: 0.0, Y: 0.0}
+        Borders: {X: 0.0, Y: 0.0, Z: 0.0, W: 0.0}
+        BorderColor: {R: 0, G: 0, B: 0, A: 0}
+    6627af7b3a2328b7a93cbd64b1bdc012:
+        Source: ../../../../../../../Downloads/george.png
+        Name: right_4
+        TextureRegion: {X: 155, Y: 155, Width: 28, Height: 32}
+        PixelsPerUnit: 1.0
+        Center: {X: 0.0, Y: 0.0}
+        Borders: {X: 0.0, Y: 0.0, Z: 0.0, W: 0.0}
+        BorderColor: {R: 0, G: 0, B: 0, A: 0}

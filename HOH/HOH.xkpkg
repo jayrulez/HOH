@@ -1,0 +1,71 @@
+!Package
+Id: 2d854d14-bc41-49fd-86da-d9a102d04caa
+SerializedVersion: {Assets: 0.0.4}
+Meta:
+    Name: HOH
+    Version: 1.0.0.0
+    Authors: []
+    Owners: []
+    RootNamespace: HOH
+    Dependencies:
+        -   Name: Xenko
+            Version: 1.10.2-beta
+            RootAssets: []
+LocalDependencies: []
+Profiles:
+    -   Name: Shared
+        Platform: Shared
+        InheritProfiles: []
+        AssetFolders:
+            -   Path: Assets/Shared
+            -   Path: HOH.Game/Effects
+        OutputGroupDirectories: {}
+        ProjectReferences:
+            -   Id: 346006fc-2ec8-4477-9561-118b762d1f6d
+                Location: HOH.Game/HOH.Game.csproj
+                Type: Library
+    -   Name: Windows
+        Platform: Windows
+        InheritProfiles: []
+        AssetFolders:
+            -   Path: Assets/Windows
+        OutputGroupDirectories: {}
+        ProjectReferences:
+            -   Id: 52e34d67-4131-455b-ba83-3b7c223643aa
+                Location: HOH.Windows/HOH.Windows.csproj
+                Type: Executable
+    -   Name: Linux
+        Platform: Linux
+        InheritProfiles: []
+        AssetFolders:
+            -   Path: Assets/Linux
+        OutputGroupDirectories: {}
+        ProjectReferences:
+            -   Id: aecb2473-e3b9-491e-8b15-a223772ceb42
+                Location: HOH.Linux/HOH.Linux.csproj
+                Type: Executable
+    -   Name: Android
+        Platform: Android
+        InheritProfiles: []
+        AssetFolders:
+            -   Path: Assets/Android
+        OutputGroupDirectories: {}
+        ProjectReferences:
+            -   Id: f098c9d4-b3f2-44e8-9436-b39dce7e5a28
+                Location: HOH.Android/HOH.Android.csproj
+                Type: Executable
+    -   Name: iOS
+        Platform: iOS
+        InheritProfiles: []
+        AssetFolders:
+            -   Path: Assets/iOS
+        OutputGroupDirectories: {}
+        ProjectReferences:
+            -   Id: 9064fe62-d5bc-42db-b960-0e2893d1d8a6
+                Location: HOH.iOS/HOH.iOS.csproj
+                Type: Executable
+ExplicitFolders: []
+Bundles: []
+TemplateFolders: []
+RootAssets:
+    - 4d79cfa5-3349-466e-8d91-88ef6ae0ebbd:Player

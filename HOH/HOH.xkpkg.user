@@ -1,0 +1,30 @@
+!SettingsFile
+Settings:
+    Package/SceneSettings:
+        0fc665f4-f41e-440b-8dcd-137879701508:
+            CamPosition: {X: -24.7083168, Y: -6.36378431, Z: 229.2123}
+            CamPitchYaw: {X: 0.0, Y: -6.390703}
+            CamProjection: Perspective
+            CamVerticalFieldOfView: 45.0
+            CamOrthographicSize: 10.0
+            CamNearClipPlane: 0.1
+            CamFarClipPlane: 1000.0
+            CamAspectRatio: 1.77777779
+            TranslationSnapActive: false
+            TranslationSnapValue: 1.0
+            RotationSnapActive: false
+            RotationSnapValue: 22.5
+            ScaleSnapActive: false
+            ScaleSnapValue: 1.1
+            SelectionMaskVisible: true
+            GridVisible: true
+            CameraPreviewVisible: true
+            RenderMode: Lighting
+            ActiveStream: 
+            TransformationGizmoSize: 1.0
+            ComponentGizmoSize: 1.0
+            FixedSizeGizmos: false
+            HiddenGizmos:
+                - Transform
+            NavigationVisible: false
+            NavigationWireframes: false

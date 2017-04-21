@@ -1,0 +1,199 @@
+!SceneAsset
+Id: 0fc665f4-f41e-440b-8dcd-137879701508
+SerializedVersion: {Xenko: 1.9.0-beta06}
+Tags: []
+SceneSettings:
+    Id: b493704f-1373-492e-b9e4-b768b43c863d
+    GraphicsCompositor: !SceneGraphicsCompositorLayers
+        Cameras:
+            0d11ede881dfb7f2b6d6dc90f0d12b97:
+                Name: null
+                Camera: b45a8ed0-9229-4207-84ce-9f25001649de/328fdd59-92c1-44d5-bc0e-4bd1550119d9
+        Layers:
+            2f6a38ae6346b921a72d2a68df917c3e:
+                Name: SceneGraphicsLayer
+                Output: !LocalRenderFrameProvider
+                    Descriptor:
+                        Format: HDR
+                Renderers:
+                    9390effccdb90ee839f07101ca5f7b04: !ClearRenderFrameRenderer
+                        Color: {R: 0.392156869, G: 0.58431375, B: 0.929411769, A: 1.0}
+                        Output: !CurrentRenderFrameProvider {}
+                    e43ccba60c511cf761229de123c71809: !SceneCameraRenderer
+                        Mode: !CameraRendererModeForward {}
+                        Camera:
+                            Index: 0
+                        Output: !CurrentRenderFrameProvider {}
+                        Viewport: {X: 0.0, Y: 0.0, Width: 100.0, Height: 100.0}
+                        ForceAspectRatio: false
+        Master:
+            Name: SceneGraphicsLayer
+            Output: !MasterRenderFrameProvider {}
+            Renderers:
+                610102d8d25dd640d97e6549b032c5b8: !SceneEffectRenderer
+                    Input: !ImageEffectRendererInput.LayerInput {}
+                    Effect: !PostProcessingEffects
+                        Camera:
+                            Index: 0
+                        AmbientOcclusion:
+                            Enabled: false
+                        DepthOfField:
+                            Enabled: false
+                            DOFAreas: {X: 0.5, Y: 6.0, Z: 50.0, W: 200.0}
+                        BrightFilter:
+                            Color: {R: 1.0, G: 1.0, B: 1.0}
+                        Bloom:
+                            Distortion: {X: 1.0, Y: 1.0}
+                            Afterimage:
+                                Enabled: false
+                        LightStreak:
+                            Attenuation: 0.7
+                        LensFlare: {}
+                        ColorTransforms:
+                            Transforms:
+                                08a4cf46ef4c989dc6bdbbaa2edeb7e1: !ToneMap
+                                    Operator: !ToneMapHejl2Operator {}
+                                21be092ac852cb33b00be213f84dff9c: !FilmGrain
+                                    Enabled: false
+                                9cf7f8b856f1bd6088dc85e5941be322: !Vignetting
+                                    Enabled: false
+                                    Color: {R: 0.0, G: 0.0, B: 0.0}
+                        Antialiasing: !FXAAEffect {}
+                    Output: !CurrentRenderFrameProvider {}
+    EditorSettings:
+        GridColor: {R: 0.7058824, G: 0.7058824, B: 0.7058824}
+        SceneUnit: 1.0
+        Mode: !SceneEditorGraphicsModeHDRSettings
+            BackgroundColor: {R: 0.470588237, G: 0.470588237, B: 0.470588237}
+            PostProcessingEffects:
+                Camera:
+                    Index: 0
+                AmbientOcclusion:
+                    Enabled: false
+                DepthOfField:
+                    Enabled: false
+                    DOFAreas: {X: 0.5, Y: 6.0, Z: 50.0, W: 200.0}
+                BrightFilter:
+                    Color: {R: 1.0, G: 1.0, B: 1.0}
+                Bloom:
+                    Enabled: false
+                    Distortion: {X: 1.0, Y: 1.0}
+                    Afterimage:
+                        Enabled: false
+                LightStreak:
+                    Enabled: false
+                    Attenuation: 0.7
+                LensFlare:
+                    Enabled: false
+                ColorTransforms:
+                    Transforms:
+                        a1baf410fb4a6c8197e8f1c4ad84381c: !ToneMap
+                            Operator: !ToneMapHejl2Operator {}
+                        94cf448487928fd3eacc85d3515abc86: !FilmGrain
+                            Enabled: false
+                        790f4ca6f19240f17665e4e2fbf50191: !Vignetting
+                            Enabled: false
+                            Color: {R: 0.0, G: 0.0, B: 0.0}
+                Antialiasing: !FXAAEffect
+                    Enabled: false
+Hierarchy:
+    RootPartIds:
+        - b45a8ed0-9229-4207-84ce-9f25001649de
+        - 57ed0f24-2499-4ebf-b696-754e3ae06745
+        - 1ab80395-b1c1-4b6f-a9df-ebf924a56462
+        - a8f88aec-1ca2-440f-9f94-d928e06683e9
+    Parts:
+        -   Entity:
+                Id: 1ab80395-b1c1-4b6f-a9df-ebf924a56462
+                Name: Character
+                Components:
+                    fff3b822a99ab45043ff3b0ddf10123e: !TransformComponent
+                        Id: cdd8bb30-fc46-4ac0-93d6-afeeafb8ea7e
+                        Position: {X: 0.0, Y: 0.0, Z: 0.0}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children: {}
+                    449c78b88d893c80900aeb8fd1865466: !HOH.CharacterScript,HOH.Game
+                        Id: 57f0b5b6-b820-4f3e-a675-101a66efc520
+                    5e36787e927824556aaf2541132c229b: !SpriteComponent
+                        Id: d2026131-3761-4949-b016-22de896a51ce
+                        SpriteProvider: !SpriteFromSheet
+                            Sheet: 4d79cfa5-3349-466e-8d91-88ef6ae0ebbd:Player
+                        Color: {R: 1.0, G: 1.0, B: 1.0, A: 1.0}
+                    36d96cb337e763f611c7200bbcd200fc: !CharacterComponent
+                        Id: 422ae789-edd3-4082-a28d-624d9e2101e5
+                        CanSleep: false
+                        Restitution: 0.0
+                        Friction: 0.5
+                        RollingFriction: 0.0
+                        CcdMotionThreshold: 0.0
+                        CcdSweptSphereRadius: 0.0
+                        FallSpeed: 10.0
+                        MaxSlope: {Radians: 0.7853982}
+                        JumpSpeed: 5.0
+                        Gravity: 0.0
+                        ColliderShapes:
+                            957910c6662daf84b5396b66fe3ac32b: !BoxColliderShapeDesc
+                                Is2D: true
+                                Size: {X: 32.0, Y: 32.0, Z: 0.0}
+                                LocalOffset: {X: 0.0, Y: 0.0, Z: 0.0}
+                                LocalRotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+        -   Entity:
+                Id: 57ed0f24-2499-4ebf-b696-754e3ae06745
+                Name: Box
+                Components:
+                    93d9c862fdf83e43da4b0d71a73ef17a: !TransformComponent
+                        Id: ee10ee8e-b38c-4642-a72c-2789f52f934e
+                        Position: {X: -72.25198, Y: -63.9683952, Z: 0.0}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children: {}
+                    5051d25664436c0fa904a75efb40a33f: !SpriteComponent
+                        Id: 8a0566a1-1dda-40a5-b8d6-3f9f122a5892
+                        SpriteProvider: !SpriteFromSheet
+                            Sheet: 15b8287c-ac91-459b-98c5-0015a8c5d1f5:SpriteSheet
+                        Color: {R: 1.0, G: 1.0, B: 1.0, A: 1.0}
+                    a750a0baeb51fb9994a3b6f1b9ff6dca: !StaticColliderComponent
+                        Id: 79a38b1f-c503-48be-8edf-2efedb4c2f4c
+                        CanSleep: false
+                        Restitution: 0.0
+                        Friction: 0.5
+                        RollingFriction: 0.0
+                        CcdMotionThreshold: 0.0
+                        CcdSweptSphereRadius: 0.0
+                        IsTrigger: false
+                        ColliderShapes:
+                            f9c4dd7518ebbddae33f058ec0d72226: !BoxColliderShapeDesc
+                                Is2D: true
+                                Size: {X: 20.0, Y: 20.0, Z: 0.0}
+                                LocalOffset: {X: 0.0, Y: 0.0, Z: 0.0}
+                                LocalRotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+        -   Entity:
+                Id: a8f88aec-1ca2-440f-9f94-d928e06683e9
+                Name: GameScript
+                Components:
+                    09354708d6a5002a111e25765e1b382e: !TransformComponent
+                        Id: e37b43bd-13e0-433c-8665-540f7174bbe0
+                        Position: {X: -1.76573849, Y: 0.0, Z: 0.5179744}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children: {}
+                    ce48b5eb377786632cf0d144f6939e0c: !HOH.GameScript,HOH.Game
+                        Id: b8e6ccb9-5752-45a9-85a7-b8323f942088
+                        Character: 1ab80395-b1c1-4b6f-a9df-ebf924a56462/57f0b5b6-b820-4f3e-a675-101a66efc520
+        -   Entity:
+                Id: b45a8ed0-9229-4207-84ce-9f25001649de
+                Name: Camera
+                Components:
+                    6af5fe24432c13828f338a421e7c9a0d: !TransformComponent
+                        Id: 2fea4a75-72e2-42f7-8b3f-e0a43adcb8bc
+                        Position: {X: 0.0, Y: 0.0, Z: 200.0}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children: {}
+                    c3b1716d2bdb5bbf14e3c5512db7d69f: !CameraComponent
+                        Id: 328fdd59-92c1-44d5-bc0e-4bd1550119d9
+                        Projection: Orthographic
+                        OrthographicSize: 720.0
+                        NearClipPlane: 1.0
+                        AspectRatio: 1.0
