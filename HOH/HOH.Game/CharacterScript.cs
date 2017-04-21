@@ -75,32 +75,8 @@ namespace HOH
         {
             if (Game.IsRunning)
             {
-                var inputState = GetInputState();
-
-                if (inputState == InputState.None)
-                {
-                    if (_oldInputState != InputState.None)
-                    {
-                        SpriteAnimation.Stop(_characterSpriteComponent);
-
-                        _characterSpriteSheet.CurrentFrame = _animationFrames.FirstOrDefault(i => _oldInputState.HasFlag(i.Key)).Value.First();
-
-                        _oldInputState = InputState.None;
-                    }
-                }
-                else
-                {
-                    if (_oldInputState != inputState)
-                    {
-                        SpriteAnimation.Play(_characterSpriteComponent, _animationFrames.FirstOrDefault(i => inputState.HasFlag(i.Key)).Value, AnimationRepeatMode.LoopInfinite, 15);
-                    }
-                }
-
-                _oldInputState = inputState;
-
-                //UpdateTransform(inputState);
-
-                UpdateTransform2();
+                UpdateAnimation();
+                UpdateTransform();
             }
         }
 
@@ -131,7 +107,7 @@ namespace HOH
             return inputState;
         }
 
-        private void UpdateTransform(InputState inputState)
+        private void UpdateTransform2(InputState inputState)
         {
             if (inputState.HasFlag(InputState.Up))
             {
@@ -204,7 +180,7 @@ namespace HOH
 
         }
 
-        private void UpdateTransform2()
+        private void UpdateTransform()
         {
             var inputState = GetInputState();
 
@@ -237,9 +213,43 @@ namespace HOH
             else
             {
                 _velocity = new Vector3((float)Math.Cos(angle) * _speed, (float)Math.Sin(angle) * _speed, 0f);
+
+                var position = _characterEntity.Transform.Position;
+
+                var halfHeight = _characterSpriteSheet.GetSprite().Size.Y / 2;
+                var halfWidth = _characterSpriteSheet.GetSprite().Size.X / 2;
+
+                Console.WriteLine($"{_velocity.X} {_velocity.Y} {_velocity.Z}");
+                Console.WriteLine($"{position.X} {position.Y} {position.Z}");
             }
 
             Entity.Get<CharacterComponent>().SetVelocity(_velocity);
+        }
+
+        public void UpdateAnimation()
+        {
+            var inputState = GetInputState();
+
+            if (inputState == InputState.None)
+            {
+                if (_oldInputState != InputState.None)
+                {
+                    SpriteAnimation.Stop(_characterSpriteComponent);
+
+                    _characterSpriteSheet.CurrentFrame = _animationFrames.FirstOrDefault(i => _oldInputState.HasFlag(i.Key)).Value.First();
+
+                    _oldInputState = InputState.None;
+                }
+            }
+            else
+            {
+                if (_oldInputState != inputState)
+                {
+                    SpriteAnimation.Play(_characterSpriteComponent, _animationFrames.FirstOrDefault(i => inputState.HasFlag(i.Key)).Value, AnimationRepeatMode.LoopInfinite, 15);
+                }
+            }
+
+            _oldInputState = inputState;
         }
     }
 }
